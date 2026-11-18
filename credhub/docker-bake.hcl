@@ -21,7 +21,7 @@ target "credhub" {
   tags = [ "${REGISTRY_PREFIX}credhub:latest", "${REGISTRY_PREFIX}credhub:${IMAGE_VERSION}" ]
 
   contexts = {
-    "src" = "https://github.com/pivotal/credhub-release.git#${CREDHUB_RELEASE_VERSION}:src/credhub"
+    "src" = "https://github.com/Broadcom/credhub-release.git#${CREDHUB_RELEASE_VERSION}:src/credhub"
     "files" = "files"
   }
 }
